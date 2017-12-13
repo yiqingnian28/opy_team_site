@@ -1,0 +1,18 @@
+<!--pages/content/content.wxml-->
+
+
+
+<view class='container'>
+  <view class='head'>
+    <view class='title'>{{title}}</view>
+    <view class='author'>作者:{{author}}</view>
+    <view class='info'>
+      <view class='gmt_modify'>发表时间:{{gmtCreate}}</view>
+      <view class='gmt_modify'>更新时间:{{gmtModify}}</view>
+    </view>
+  </view>
+  <view class='body'>
+    <import src="../../lib/wxParse/wxParse.wxml" />
+    <template is="wxParse" data="{{wxParseData:content.nodes}}" />
+  </view>
+</view>

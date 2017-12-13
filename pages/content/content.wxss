@@ -1,0 +1,44 @@
+/* pages/content/content.wxss */
+
+.head {
+  width: 100%;
+}
+
+.head .title {
+  margin: 30rpx  30rpx ;
+  padding: 10rpx 0;
+  text-align: center;
+  font-size: 17pt;
+  border-bottom: solid 1rpx #b2b2b2;
+  color: #000;
+}
+
+.head .author {
+  margin: 20rpx 0;
+  text-align: center;
+  font-size: 9pt;
+  color: #888888;
+}
+
+.head .info {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+.head .info view {
+  font-size: 8pt;
+  color: #b2b2b2;
+}
+
+.body {
+  width: calc(100% - 70rpx);
+  margin: 25rpx 25rpx;
+  padding: 20rpx;
+  background: rgb(243, 243, 243);
+  border-radius: 5rpx;
+}
+
+.body {
+  font-size: 10pt;
+}
