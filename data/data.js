@@ -7,7 +7,7 @@ var data = {
     author: 'liangdan',
     gmtCreate: '2017-11-11',
     gmtModify: '2017-11-11',
-    content: '<p>OP全称Outpost 解释意思是前哨站士兵，我们内部解释第一个出现在战场上的人。生存如字意上的解释。OP生存-最早出现在战场上的并能生存下来的最强战士！！  </p><br><br>YY:61072，QQ群:165798597。',
+    content: '<p>OP全称Outpost 解释意思是前哨站士兵，我们内部解释第一个出现在战场上的人。生存如字意上的解释。OP生存-最早出现在战场上的并能生存下来的最强战士！！  </p><br><br>YY:61072，QQ群:165798597。<img src="https://t.alipayobjects.com/images/T1HHFgXXVeXXXXXXXX.png">',
     format: 'html',
     digest: 'OP全称Outpost 解释意思是前哨站士兵，我们内部解释第'
   }, {

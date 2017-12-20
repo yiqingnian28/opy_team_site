@@ -17,25 +17,38 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (objs) {
-    console.log(objs);
     const contentId = objs.contentId;
+
+    console.log(contentId);
+
     if (!contentId) {
       //TODO ERROR HANDLE
     }
 
-    console.log(data);
-    const content = miscUtil.findContentById(contentId, data.tempData.contents);
-    console.log(content);
+    const that = this;
+    wx.request({
+      url: 'https://opy-warthunder.top/opy-server/service/queryContent.json',
+      data: {
+        id: contentId
+      },
+      header: {
+        'content-type': 'application/json' // 默认值
+      },
+      success: function (res) {
+        console.log(res.data);
 
-    let that = this;
-    WxParse.wxParse('content', 'html', content.content, that);
+        const content = res.data.content;
+        console.log(content);
+        WxParse.wxParse('content', 'html', content, that);
 
-    this.setData({
-      title: content.title,
-      author: content.author,
-      gmtCreate: content.gmtCreate,
-      gmtModify: content.gmtModify
-    });
+        that.setData({
+          title: res.data.title,
+          author: res.data.author,
+          gmtCreate: res.data.gmtCreate,
+          gmtModify: res.data.gmtModify
+        });
+      }
+    })
   },
 
   /**
